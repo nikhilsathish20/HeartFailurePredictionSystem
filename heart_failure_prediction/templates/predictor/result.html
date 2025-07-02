@@ -1,0 +1,67 @@
+<!-- templates/predictor/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <style>
+        body {
+            background-image: url('{% static "images/background-image.jpg" %}'); /* Background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* No repeat */
+            height: 100vh; /* Full height */
+            color: #f8f9fa; /* Light text color for contrast */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            padding: 40px; /* Padding */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Box shadow for depth */
+            margin-top: 100px; /* Margin from the top */
+        }
+
+        h2 {
+            margin-bottom: 30px; /* Space below the heading */
+            text-align: center; /* Center the heading */
+        }
+
+        .alert {
+            font-size: 20px; /* Increase font size for alert */
+            text-align: center; /* Center text in alert */
+            margin-bottom: 20px; /* Space below the alert */
+        }
+
+        .btn-secondary {
+            background-color: #007bff; /* Button color */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer on hover */
+            transition: background-color 0.3s; /* Transition effect */
+            display: block; /* Block element */
+            margin: 0 auto; /* Center the button */
+        }
+
+        .btn-secondary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Prediction Result</h2>
+        <div class="alert {% if 'High' in result %}alert-danger{% else %}alert-success{% endif %}" role="alert">
+            {{ result }}
+        </div>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Make Another Prediction</a>
+    </div>
+</body>
+</html>
