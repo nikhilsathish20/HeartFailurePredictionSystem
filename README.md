@@ -70,7 +70,7 @@ Click the Predict button.
 
 View prediction result – whether the patient is at risk of heart failure or not.
 
-📦 Requirements
+## 📦 Requirements
 Django
 numpy
 pandas
@@ -78,7 +78,7 @@ scikit-learn
 joblib
 
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 Add charts to visualize patient health history
 
 Store predictions in a database for record-keeping
@@ -87,7 +87,7 @@ User authentication for doctors/patients
 
 REST API for model predictions
 
-📄 License
+## 📄 License
 MIT License - feel free to use and modify the code.
 
-Created with ❤️ using Django and ML.
+# Created with ❤️ using Django and ML.
