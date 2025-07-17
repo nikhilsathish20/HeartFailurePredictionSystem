@@ -52,14 +52,14 @@ The system uses a trained machine learning model (e.g., Random Forest, Logistic 
     pip install -r requirements.txt
     ```
 
-Install dependencies
+    Install dependencies
     ```bash
     pip install -r requirements.txt
     Run the Django server
     ```
 
     ```bash
-    python manage.py runserver
+    py manage.py runserver
     Open in browser
     http://127.0.0.1:8000/
     ```
