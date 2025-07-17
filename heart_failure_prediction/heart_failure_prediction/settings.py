@@ -25,7 +25,7 @@ SECRET_KEY = 'qggsg9t4!grjyu3sny=n@op19(c&pf(pur@!xist!fje+1_mss'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS: list[str] = []
 
 
 # Application definition
