@@ -71,7 +71,7 @@ Click the Predict button.
 ### View prediction result whether the patient is at risk of heart failure or not.
 
 ## 📦 Requirements
-Django
+django
 numpy
 pandas
 scikit-learn
