@@ -65,8 +65,8 @@ The system uses a trained machine learning model (e.g., Random Forest, Logistic 
     ```
 
 ## ✅ How to Use
-    Enter the patient’s medical details in the input form.
-    Click the Predict button.
+Enter the patient’s medical details in the input form.
+Click the Predict button.
 
 ### View prediction result whether the patient is at risk of heart failure or not.
 
