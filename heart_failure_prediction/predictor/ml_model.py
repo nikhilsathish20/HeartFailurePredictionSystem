@@ -1,6 +1,5 @@
 # predictor/ml_model.py
-
-import joblib
+import joblib # type: ignore
 import os
 
 # Get the absolute path of the model and scaler
