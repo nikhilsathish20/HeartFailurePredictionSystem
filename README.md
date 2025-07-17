@@ -52,7 +52,7 @@ The system uses a trained machine learning model (e.g., Random Forest, Logistic 
     pip install -r requirements.txt
     ```
 
-    Install dependencies
+2. **Install dependencies**
     ```bash
     pip install -r requirements.txt
     Run the Django server
